@@ -43,7 +43,7 @@ O manual de uso é **a verdadeira bíblia para usúarios de linux**. Porque é s
 
 Teremos um capítulo interio sobre como ler o manual: é realmente muito importante.
 
-###### Um comando simles
+#### Um comando simles
 
 > josuegrace@josuegracestudy:~$ date
 
@@ -64,7 +64,7 @@ Se não tiver resposta, quer dizer você está numa pasta vazia.
 
 É isso aí, tão simples assim. Um comando é constituido por uma palavra e não contém nenhum espaço. Nos casos simples como os que acabamos de ver, basta apenas digitar um comando para obter uma resposta; porém, na quase totalidade dos casos podemos (e as vezes devemos) digitar opçõe, que chamamos de **parâmetros**.
 
-###### Os parâmetros
+#### Os parâmetros
 
 parâmetros são opções que escrevemos na frente do prompt de comando. O comando e os parâmetros são separados por um espaço, assim :
 
@@ -72,7 +72,7 @@ parâmetros são opções que escrevemos na frente do prompt de comando. O coman
 
 Os prórios parâmetros podem conter espaços, letras, números... um pouco de tudo, na verdade. Não há uma verdadeira regra sobre a forma dos parâmetros, porém e felizmente os programadores estabeleceram uma "convenção" para possamos reconhecer diferentes tipos de parâmetros.
 
-###### Os parâmetros curtos (uma letra)
+#### Os parâmetros curtos (uma letra)
 
 Os parâmetros mais comuns são constiuídos de uma letra precedida por um traço. Por exemplo:
 > comando -d
@@ -108,7 +108,7 @@ Um exemplo com o comando ls junto com o parâmetro *a* (minúsculo):
 Isto mostra todo o conteúdo da pasta, mesmo os arquivos escondidos.
 Um "arquivo escondido" no Linux é um arquivo que começa por um ponto, Normalmente, se você está no repertório *home*, você deveria ter uma grande quantidade de arquivos escondidos. São em geral arquivos de configuração de programas.
 
-###### Os parâmetros longos (várias letras)
+#### Os parâmetros longos (várias letras)
 
 Os parâmetros com várias letras são precedidos de dois traços, assim:
 >comando --parâmetro
@@ -142,7 +142,7 @@ Testamos isso com o comando ls junto com o parâmetro **--all**, que siginifica 
 
 Como você pode notar, --all é sinônimo de -a.
 
-###### Os valores dos parâmetros
+#### Os valores dos parâmetros
 
 Certos parâmetros necessitam que você os complete com um valor. Isto funciona diferentemente segundo que você está trabalhando com um parâmetro longo ou um parâmetro curto.
 
@@ -156,7 +156,7 @@ Se é um parâmetro longo, em geral é assim:
 
 Isso tem o mesmo resultado, porém é mais claro e mais longo para escrever.
 
-###### Os outros parâmetros
+#### Os outros parâmetros
 
 Como nós dizemos mais cedo: não há uma regra absoluta no nível dos parâmetros e vocês encontrarão com certeza uns que funcionam diferentemente. Felizmente, as "convenções" que acabamos de dar são válidas na maioria dos casos.
 
@@ -175,7 +175,7 @@ Certos parâmetros são um pouco diferentes e dependem dos comandos. Por exemplo
 
 O Linux possui tantos comandos diferentes que é difícil de se perder e de esquecer algumas. Mas, isso não é um problema pois o Linux propõe uma série de formas de achar comandos que você esqueceu.
 
-###### Autocomplete de comando
+#### Autocomplete de comando
 
 A primeira coisa a saber é o autocomplete de comando. Tomamos por exemplo o comando *date*: você não lembra mais como se escreve porém, você lembra das primeiras letras do comando.
 
@@ -206,7 +206,7 @@ Nesta pergunta, você pode responder "**y**" (yes) e a lista vai aparecer págin
 
 Se você responder "**n**" (no), nada vai acontecer.
 
-###### Histórico dos comandos
+#### Histórico dos comandos
 
 Muitas vezes necessitamos achar um comando que já digitamos há alguns minutos (ou mesmo segundos) atrás. As vezes, é porque nós esquecemos o comando ou pode ser porque não queremos reescrever o comando inteiro de novo.
 

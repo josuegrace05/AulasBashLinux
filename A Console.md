@@ -1,6 +1,6 @@
-#O Terminal
+# O Terminal
 
-##Abrir o terminal
+## Abrir o terminal
 
 Há vários jeitos de abrir um terminal na interface gráfica. Mas se você está no Ubuntu, basta apertar **ctrl+alt+t**.
 
@@ -35,7 +35,7 @@ O símbolo **~** sifnifica que você está na sua pasta pessoal, o qual geralmen
 
 Em resumo, uma vez que você fala a mesma língua que o prompt de comandos, você entende o que ele quer dizer. "Bom dia e bem-vindo, você é *josuegrace* na máquina *josuegracestudy*. Você está atualmente na sua pasta *home* e possui direitos de usúario limitado.":).
 
-##Comandos e parâmetros
+## Comandos e parâmetros
 
 Dentro console, trabalhamos com o que chamamos de **comandos**. Estes sendo ínumeros, você não pode conhecer todos e não é isso o objetivo. O obejtivo é que você saiba como saber de cor a maiora dos comandos "comuns" e, para os menos comuns, que você seja capaz de aprender a usar lendo o manual de uso.
 
@@ -43,9 +43,10 @@ O manual de uso é **a verdadeira bíblia para usúarios de linux**. Porque é s
 
 Teremos um capítulo interio sobre como ler o manual: é realmente muito importante.
 
-######Um comando simles
+###### Um comando simles
 
 > josuegrace@josuegracestudy:~$ date
+
 > Qui Fev 22 16:13:20 -03 2018
 
 A primeira linha contém o prompt de comando seguida do comando que eu digitei. A segunda linha é a resposta do computador para este comando.
@@ -54,6 +55,7 @@ Nesta linha, como vocês entenderam, nós pedimos quais eram a data e a hora.
 Vamos tentar um outro comando: digite **ls**. É a breviação de "list", o que significa "**liste os arquivos e pastas do repertório atual**".
 
 > josuegrace@josuegracestudy:~$ ls
+
 > Desktop Examples Images
 
 Isso significa que o repertório atual contém 3 pastas: Desktop, Examples, Images. Em geral, o sistema colora todos os elementos para que possamos distinguir facilmente os arquivos das pastas.
@@ -62,7 +64,7 @@ Se não tiver resposta, quer dizer você está numa pasta vazia.
 
 É isso aí, tão simples assim. Um comando é constituido por uma palavra e não contém nenhum espaço. Nos casos simples como os que acabamos de ver, basta apenas digitar um comando para obter uma resposta; porém, na quase totalidade dos casos podemos (e as vezes devemos) digitar opçõe, que chamamos de **parâmetros**.
 
-######Os parâmetros
+###### Os parâmetros
 
 parâmetros são opções que escrevemos na frente do prompt de comando. O comando e os parâmetros são separados por um espaço, assim :
 
@@ -70,12 +72,14 @@ parâmetros são opções que escrevemos na frente do prompt de comando. O coman
 
 Os prórios parâmetros podem conter espaços, letras, números... um pouco de tudo, na verdade. Não há uma verdadeira regra sobre a forma dos parâmetros, porém e felizmente os programadores estabeleceram uma "convenção" para possamos reconhecer diferentes tipos de parâmetros.
 
-######Os parâmetros curtos (uma letra)
+###### Os parâmetros curtos (uma letra)
 
 Os parâmetros mais comuns são constiuídos de uma letra precedida por um traço. Por exemplo:
 > comando -d
+
 Se devemos dar vários parâmetros, podemos fazer assim:
 > comando -d -a -U -h
+
 Ou mais curto:
 > comando -daUh
 
@@ -84,6 +88,7 @@ Ou mais curto:
 Um exemplo com o comando ls junto com o parâmetro *a* (minúsculo):
 
 > josuegrace@josugracestudy: ~$ ls -a
+
 	.              .gconfd            .mozilla-thunderbird
 	..             .gimp-2.2          .nautilus
 	.bash_history  .gksu.lock         .profile
@@ -103,7 +108,7 @@ Um exemplo com o comando ls junto com o parâmetro *a* (minúsculo):
 Isto mostra todo o conteúdo da pasta, mesmo os arquivos escondidos.
 Um "arquivo escondido" no Linux é um arquivo que começa por um ponto, Normalmente, se você está no repertório *home*, você deveria ter uma grande quantidade de arquivos escondidos. São em geral arquivos de configuração de programas.
 
-######Os parâmetros longos (váras letras)
+###### Os parâmetros longos (várias letras)
 
 Os parâmetros com várias letras são precedidos de dois traços, assim:
 >comando --parâmetro
@@ -113,10 +118,12 @@ Desta vez, não tem escolha: se você quer colocar vários parâmetros longos, v
 
 Pode também combinar os parâmetros longos e os parâmetros curtos dentro de um comando:
 > comando -daUh --outroparametro
+
 > Existe às vezes duas escritas possíveis para um parâmetro de comando: uma versão curta e uma versão longa. Isto permite deixar a escolha segundo o que você prefere entre um ou o outro.
 
 Testamos isso com o comando ls junto com o parâmetro **--all**, que siginifica tudo em inglê:
 >josuegrace@josuegracestdy:~$ ls --all
+
 	.              .gconfd            .mozilla-thunderbird
 	..             .gimp-2.2          .nautilus
 	.bash_history  .gksu.lock         .profile
@@ -135,43 +142,48 @@ Testamos isso com o comando ls junto com o parâmetro **--all**, que siginifica 
 
 Como você pode notar, --all é sinônimo de -a.
 
-######Os valores dos parâmetros
+###### Os valores dos parâmetros
 
 Certos parâmetros necessitam que você os complete com um valor. Isto funciona diferentemente segundo que você está trabalhando com um parâmetro longo ou um parâmetro curto.
 
 Com um parâmetro curto:
 > comando -p 14
+
 Isso indica que associamos o valor 14 ao parâmetro p. Com essa técnica, podemos por exemplo fazer o computador entender: "Eu quero ver a lista de todos os arquivos com 14 Mb".
 
 Se é um parâmetro longo, em geral é assim:
->comando --parametro=14
+> comando --parametro=14
+
 Isso tem o mesmo resultado, porém é mais claro e mais longo para escrever.
 
-######Os outros parâmetros
+###### Os outros parâmetros
 
 Como nós dizemos mais cedo: não há uma regra absoluta no nível dos parâmetros e vocês encontrarão com certeza uns que funcionam diferentemente. Felizmente, as "convenções" que acabamos de dar são válidas na maioria dos casos.
 
 Certos parâmetros são um pouco diferentes e dependem dos comandos. Por exemplo o comando *ls*, se digitarmos o nome de uma pasta (ou subpasta). isto mostrará o conteúdo dessa pasta em vez do contéudo da pasta corrente.
 
 > josuegrace@josuegracestdy:~$ ls Examples
-	> Experience ubuntu.ogg   logo-Ubuntu.png           oo-payment-schedule.ods
+	
+	Experience ubuntu.ogg   logo-Ubuntu.png           oo-payment-schedule.ods
 	fables_01_01_aesop.spx  oo-about-these-files.odt  oo-presenting-kubuntu.odp
 	gimp-ubuntu-splash.xcf  oo-about-ubuntu-ru.rtf    oo-presenting-ubuntu.odp
 	kubuntu-leaflet.png     oo-cd-cover.odg           oo-trig.xls
 	logo-Edubuntu.png       oo-derivatives.doc        oo-welcome.odt
 	logo-Kubuntu.png        oo-maxwell.odt            ubuntu Sax.ogg
 
-##Achar um comando
+## Achar um comando
 
 O Linux possui tantos comandos diferentes que é difícil de se perder e de esquecer algumas. Mas, isso não é um problema pois o Linux propõe uma série de formas de achar comandos que você esqueceu.
 
-######Autocomplete de comando
+###### Autocomplete de comando
 
 A primeira coisa a saber é o autocomplete de comando. Tomamos por exemplo o comando *date*: você não lembra mais como se escreve porém, você lembra das primeiras letras do comando.
 
 Basta digitar "*da*" na console, e digitar duas vezes na tecla **Tab** na esquerda do seu teclado. E o resultado é o seguinte:
 > josuegrace@josuegracestdy:~$ da
+
 > date date
+
 > josuegrace@josuegracestdy:~$ da
 
 Quando aperta duas vezes na tecla **Tab**, você está pedindo ao computador a lista dos comandos que començam por "*da*". E ele responde "*dash*" e "*date*". Há portanto dois comandos que començam por "*da*", e você acabou de achar aquela que você estava procurando, ou seja, "*date*".
@@ -180,6 +192,7 @@ O mais interessante ainda é quando só há um resultado na sua busca, o computa
 
 As vezes há muitos comandos que correspondem à sua pesquisa. Por exemplo se você não digitar nada e só apertar duas vezes *Tab*. Vai pedir de monstar a lista de todos os comandos disponíveis no seu computador.
 > josuegrace@josuegracestdy:~$
+
 > Display all 2173 possibilities? (y or n)
 
 Muito brutal, não é ?
@@ -193,7 +206,7 @@ Nesta pergunta, você pode responder "**y**" (yes) e a lista vai aparecer págin
 
 Se você responder "**n**" (no), nada vai acontecer.
 
-######Histórico dos comandos
+###### Histórico dos comandos
 
 Muitas vezes necessitamos achar um comando que já digitamos há alguns minutos (ou mesmo segundos) atrás. As vezes, é porque nós esquecemos o comando ou pode ser porque não queremos reescrever o comando inteiro de novo.
 
@@ -202,7 +215,8 @@ Esse atalho vale ouro: aperte a tecla com a flecha em direção para cima; você
 Se você apertar a tecla com flecha em direção para baixo, vão aprecer os comandos mais recentes.
 
 Se quiser voltar mais longe no histórico dos comandos, nem precisa apertar cem vezes na tecla "para cima". Existe o comando **history** que mostsra o histórico dos comandos.
->	152  date
+>	
+	152  date
 	153  ls
 	154  ls -a
 	155  ls --all
@@ -214,11 +228,11 @@ O último comando sempre vai ser *history*. Você vai notar que os comandos são
 
 No caso em que a tecla "para cima" e a comando *history* não bastam para achar uma velho comando que eu digitei, há um atalho muito útil:
 *ctrl +R*. Aperte então nas teclas *Ctrl* e *R* ao mesmo tempo e o computador se colocará em modo "busca de um comado digitado". Você então digitar qualquer série de letras a um velho comando. Por exemplo, digite "*Ctrl + R*" e depois digite "*all*". O Linux vai achar o comando "*ls --all*" que contém jsutamente a palavra "*all*". Agora é só digitar *Enter* para entar novamente o comando.
->	(reverse-i-search)`all': ls --all
+> (reverse-i-search)`all': ls --all
 
 Se não é o comando que está procurando, aperte novamente "*Ctrl + R*" para subir na lista de comandos que contêm "*all*".
 
-##Alguns atalhos práticos do teclado.
+## Alguns atalhos práticos do teclado.
 
 Não pode parecer porém, a console do Linux proprõe uma quantidade incrível de atalhos de teclado. Isto ajuda a ir muito rápido no que estamos fazendo.
 

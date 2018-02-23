@@ -43,20 +43,20 @@ O manual de uso é **a verdadeira bíblia para usúarios de linux**. Porque é s
 
 Teremos um capítulo interio sobre como ler o manual: é realmente muito importante.
 
-#### Um comando simles
+#### Um comando simples
 
 > josuegrace@josuegracestudy:~$ date
-
-> Qui Fev 22 16:13:20 -03 2018
+	
+	Qui Fev 22 16:13:20 -03 2018
 
 A primeira linha contém o prompt de comando seguida do comando que eu digitei. A segunda linha é a resposta do computador para este comando.
 Nesta linha, como vocês entenderam, nós pedimos quais eram a data e a hora.
 
 Vamos tentar um outro comando: digite **ls**. É a breviação de "list", o que significa "**liste os arquivos e pastas do repertório atual**".
 
-> josuegrace@josuegracestudy:~$ ls
-
-> Desktop Examples Images
+> josuegrace@josuegracestudy:~$ ls	
+	
+	Desktop Examples Images
 
 Isso significa que o repertório atual contém 3 pastas: Desktop, Examples, Images. Em geral, o sistema colora todos os elementos para que possamos distinguir facilmente os arquivos das pastas.
 
@@ -181,8 +181,8 @@ A primeira coisa a saber é o autocomplete de comando. Tomamos por exemplo o com
 
 Basta digitar "*da*" na console, e digitar duas vezes na tecla **Tab** na esquerda do seu teclado. E o resultado é o seguinte:
 > josuegrace@josuegracestdy:~$ da
-
-> date date
+	
+	date date
 
 > josuegrace@josuegracestdy:~$ da
 
@@ -192,8 +192,8 @@ O mais interessante ainda é quando só há um resultado na sua busca, o computa
 
 As vezes há muitos comandos que correspondem à sua pesquisa. Por exemplo se você não digitar nada e só apertar duas vezes *Tab*. Vai pedir de monstar a lista de todos os comandos disponíveis no seu computador.
 > josuegrace@josuegracestdy:~$
-
-> Display all 2173 possibilities? (y or n)
+	
+	Display all 2173 possibilities? (y or n)
 
 Muito brutal, não é ?
 Há 2 173 comandos disponíveis no meu computador. Mais eu vou instalar programas, mais terei comandos disponíveis. Não esperem então conhecer todos eles, novos programas saem todo dia.

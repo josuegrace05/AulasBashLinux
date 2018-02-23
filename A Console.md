@@ -1,4 +1,4 @@
-# O Terminal
+# O TERMINAL
 
 ## Abrir o terminal
 

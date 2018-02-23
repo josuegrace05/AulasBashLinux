@@ -182,7 +182,7 @@ A primeira coisa a saber é o autocomplete de comando. Tomamos por exemplo o com
 Basta digitar "*da*" na console, e digitar duas vezes na tecla **Tab** na esquerda do seu teclado. E o resultado é o seguinte:
 > josuegrace@josuegracestdy:~$ da
 	
-	date date
+	dash date
 
 > josuegrace@josuegracestdy:~$ da
 

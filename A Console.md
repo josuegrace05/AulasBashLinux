@@ -5,7 +5,7 @@
 Há vários jeitos de abrir um terminal na interface gráfica. Mas, se você está numa distribuição Debian basta apertar **ctrl+alt+t**.
 
 Se conseguir abrir, vai aparecer um console como na imagem abaixo.
-(Inserir imagem do terminal)
+![terminal](https://github.com/josuegrace05/Code/blob/master/terminal.png)
 
 A partir de agora nós vamos apresentar o texto que aparece no terminal no formato seguinte:
 

@@ -1,45 +1,45 @@
-# O TERMINAL
+# Itrodução ao Shell do Linux
 
 ## Abrir o terminal
 
-Há vários jeitos de abrir um terminal na interface gráfica. Mas se você está no Ubuntu, basta apertar **ctrl+alt+t**.
+Há vários jeitos de abrir um terminal na interface gráfica. Mas, se você está numa distribuição Debian basta apertar **ctrl+alt+t**.
 
-Se conseguir abrir, vai aparecer uma console como na imagem abaixo.
+Se conseguir abrir, vai aparecer um console como na imagem abaixo.
 (Inserir imagem do terminal)
 
 A partir de agora nós vamos apresentar o texto que aparece no terminal no formato seguinte:
 
 >josuegrace@josuegracestudy:~$
 
-Você ainda não escreveu nada porém o computador já fala bom-dia para você do seu jeito. O que você está vendo é que se chama de **prompt de comando**. É uma mensagem que convinda você a entrar um comando. Ele sempre aparece antes de você digitar um comando.
+Você ainda não escreveu nada porém, o computador já fala bom-dia para você do seu jeito. O que você está vendo é o que se chama de **prompt de comando**. É uma mensagem que convida você a entrar um comando. Ele sempre aparece antes de você digitar um comando.
 
 Agora, decortiquemos mais um pouco esse prompt de comando porque ele é muito interressante:
 
-* josuegrace: esse é o primeiro elemento do seu pseudônimo. É o pseudônimo no qual você está logado. Com efeito, lembrem-se: é possível criar várias contas de usuário no Linux. É geralmente aconselhado gerar uma conta por cada pessoa que vai usar o computador (um por cada membro de família, por exemplo). Nós veremos mais tarde como adicionar contas de usúarios.
+* josuegrace: esse é o seu nome de usúario. É o pseudônimo no qual você está logado. Com efeito, lembrem-se: é possível criar várias contas de usuário no Linux. É geralmente aconselhado gerar uma conta por cada pessoa que vai usar o computador (um por cada membro da família, por exemplo). Nós veremos mais tarde como adicionar contas de usúarios.
 
 * @ : esse símbolo não indica nada de particular. É o símbolo "at" que significa "em". Assim, se ler o prompt de comando da esquerda para direita, devemos então entender "josuegrace em".
 
-* josuegracestudy: esse é o nome do computador no qual você está trabalhando. No meu caso ele se chama **josuegracestudy**, porém eu poderia dar um outro nome qualquer durante a instalação.
+* josuegracestudy: esse é o nome do computador que você está usando. No meu caso ele se chama **josuegracestudy**, porém eu poderia dar um outro nome qualquer durante a instalação.
 
 * :: esse símbolo não tem nada de especial. É apenas um seprador.
 
-* ~: esse símbolo é a pasta na qual você está actualmente. Você pode navegar de pasta em pasta dentro da console e é muito útil que lembre sistematicamente para você onde você está antes de cada comando.
+* ~: esse símbolo é a pasta na qual você está atualmente. Você pode navegar de pasta em pasta dentro do console e é muito útil que lembre sistematicamente para você onde você está antes de cada comando.
 
-O símbolo **~** sifnifica que você está na sua pasta pessoal, o qual geralmente chamamos de "home" no lInux; é o equivalente da pasta "Meus documentos" de Windows. Nós estudaremos com mais detalhes o funcionamento das pastas no Linux no próximo capítulo.
+O símbolo **~** significa que você está na sua pasta pessoal, o qual geralmente chamamos de "home" no Linux; é o equivalente da pasta "Meus documentos" do Windows. Nós estudaremos com mais detalhes o funcionamento das pastas no Linux no próximo capítulo.
 
 * $: esse último símbolo é muito importante; ele indica o seu nível de autorisazão na máquina. Ele pode tomar duas formas diferentes:
 	
 	* $: significa que você está como um usuário "normal", com direitos limitados (ele não pode modificar os arquivos mais importantes do sistema). A minha conta **josuegrace** é então uma conta normal com direitos limitados;
 
-	* #: significa que você está em modo *superusuário*, isso quer dizer que você está conectado sob o pseudônimo "root". O root é o usúario mestre qye tem o direito de fazer tudo na sua máquina (até mesmo de destruî-la!). Nós veremos esse modo root mais em detalhes mais tarde; por enquanto nós ficamos com a conta de usúario limmitada, assim não arriscamos fazer besteras.
+	* #: significa que você está em modo *superusuário*, isso quer dizer que você está conectado sob o pseudônimo "root". O root é o usúario mestre que tem o direito de fazer tudo na sua máquina (até mesmo de destruî-la!). Nós veremos esse modo mais em detalhes mais tarde; por enquanto nós ficamos com a conta de usúario limitada, assim não arriscamos fazer besteiras.
 
-Em resumo, uma vez que você fala a mesma língua que o prompt de comandos, você entende o que ele quer dizer. "Bom dia e bem-vindo, você é *josuegrace* na máquina *josuegracestudy*. Você está atualmente na sua pasta *home* e possui direitos de usúario limitado.":).
+Em resumo, uma vez que você fala a mesma língua que o prompt de comandos, você entende o que ele quer dizer: "Bom dia e bem-vindo, você é *josuegrace* na máquina *josuegracestudy*. Você está atualmente na sua pasta *home* e possui direitos de usúario limitados." :).
 
 ## Comandos e parâmetros
 
-Dentro console, trabalhamos com o que chamamos de **comandos**. Estes sendo ínumeros, você não pode conhecer todos e não é isso o objetivo. O obejtivo é que você saiba como saber de cor a maiora dos comandos "comuns" e, para os menos comuns, que você seja capaz de aprender a usar lendo o manual de uso.
+Dentro do console, trabalhamos com o que chamamos de **comandos**. Estes sendo ínumeros e você não consegue conhecer todos e não é isso o objetivo. O obejtivo é que você saiba de cor como usar a maiora dos comandos "comuns" e, para os menos comuns, que você seja capaz de aprender a usar lendo o manual de uso.
 
-O manual de uso é **a verdadeira bíblia para usúarios de linux**. Porque é simplesmente uma ferramenta de referência, ali podemos encontrar a resposta para TODAS suas perguntas sabendo como ler o manual.
+O manual de uso é **a verdadeira bíblia para usúarios de Linux**. Porque é simplesmente uma ferramenta de referência, ali podemos encontrar a resposta para TODAS suas perguntas sabendo como ler o manual.
 
 Teremos um capítulo interio sobre como ler o manual: é realmente muito importante.
 
@@ -52,7 +52,7 @@ Teremos um capítulo interio sobre como ler o manual: é realmente muito importa
 A primeira linha contém o prompt de comando seguida do comando que eu digitei. A segunda linha é a resposta do computador para este comando.
 Nesta linha, como vocês entenderam, nós pedimos quais eram a data e a hora.
 
-Vamos tentar um outro comando: digite **ls**. É a breviação de "list", o que significa "**liste os arquivos e pastas do repertório atual**".
+Vamos tentar um outro comando: digite `ls`. É a breviação de "list", o que significa "**liste os arquivos e pastas do repertório atual**".
 
 > josuegrace@josuegracestudy:~$ ls	
 	
@@ -60,9 +60,9 @@ Vamos tentar um outro comando: digite **ls**. É a breviação de "list", o que 
 
 Isso significa que o repertório atual contém 3 pastas: Desktop, Examples, Images. Em geral, o sistema colora todos os elementos para que possamos distinguir facilmente os arquivos das pastas.
 
-Se não tiver resposta, quer dizer você está numa pasta vazia.
+Se não tiver resposta, quer dizer você que está numa pasta vazia.
 
-É isso aí, tão simples assim. Um comando é constituido por uma palavra e não contém nenhum espaço. Nos casos simples como os que acabamos de ver, basta apenas digitar um comando para obter uma resposta; porém, na quase totalidade dos casos podemos (e as vezes devemos) digitar opçõe, que chamamos de **parâmetros**.
+É isso aí, tão simples assim. Um comando é constituido por uma palavra e não contém nenhum espaço. Nos casos simples como os que acabamos de ver, basta apenas digitar um comando para obter uma resposta; porém, na quase totalidade dos casos podemos (e as vezes devemos) digitar opções, que chamamos de **parâmetros**.
 
 #### Os parâmetros
 
@@ -70,7 +70,7 @@ parâmetros são opções que escrevemos na frente do prompt de comando. O coman
 
 > josuegrace@josugracestudy: ~$ comando parâmetros
 
-Os prórios parâmetros podem conter espaços, letras, números... um pouco de tudo, na verdade. Não há uma verdadeira regra sobre a forma dos parâmetros, porém e felizmente os programadores estabeleceram uma "convenção" para possamos reconhecer diferentes tipos de parâmetros.
+Os prórios parâmetros podem conter espaços, letras, números... um pouco de tudo, na verdade. Não há uma verdadeira regra sobre a forma dos parâmetros; porém, e felizmente os programadores estabeleceram uma "convenção" para que possamos reconhecer diferentes tipos de parâmetros.
 
 #### Os parâmetros curtos (uma letra)
 
@@ -83,9 +83,9 @@ Se devemos dar vários parâmetros, podemos fazer assim:
 Ou mais curto:
 > comando -daUh
 
-> Atenção! -u pode na maiora de casos não ter o mesmo sentido que -U.
+> Atenção! "-u" em miníscula pode na maiora de casos não ter o mesmo sentido que "-U" em maíuscula.
 
-Um exemplo com o comando ls junto com o parâmetro *a* (minúsculo):
+Um exemplo com o comando `ls` junto com o parâmetro *a* (minúsculo):
 
 > josuegrace@josugracestudy: ~$ ls -a
 
@@ -106,7 +106,7 @@ Um exemplo com o comando ls junto com o parâmetro *a* (minúsculo):
 	.gconf         .mozilla           .xsession-errors
 
 Isto mostra todo o conteúdo da pasta, mesmo os arquivos escondidos.
-Um "arquivo escondido" no Linux é um arquivo que começa por um ponto, Normalmente, se você está no repertório *home*, você deveria ter uma grande quantidade de arquivos escondidos. São em geral arquivos de configuração de programas.
+Um "arquivo escondido" no Linux é um arquivo que começa por um ponto. Normalmente, se você está no repertório *home*, você deveria ter uma grande quantidade de arquivos escondidos. São em geral arquivos de configuração de programas.
 
 #### Os parâmetros longos (várias letras)
 
@@ -121,8 +121,8 @@ Pode também combinar os parâmetros longos e os parâmetros curtos dentro de um
 
 > Existe às vezes duas escritas possíveis para um parâmetro de comando: uma versão curta e uma versão longa. Isto permite deixar a escolha segundo o que você prefere entre um ou o outro.
 
-Testamos isso com o comando ls junto com o parâmetro **--all**, que siginifica tudo em inglê:
->josuegrace@josuegracestdy:~$ ls --all
+Testamos isso com o comando ls junto com o parâmetro **--all**, que siginifica tudo em inglês:
+>josuegrace@josuegracestudy:~$ ls --all
 
 	.              .gconfd            .mozilla-thunderbird
 	..             .gimp-2.2          .nautilus
@@ -140,7 +140,7 @@ Testamos isso com o comando ls junto com o parâmetro **--all**, que siginifica 
 	.gaim          .metacity          .Xauthority
 	.gconf         .mozilla           .xsession-errors
 
-Como você pode notar, --all é sinônimo de -a.
+Como você pôde notar, --all é sinônimo de -a.
 
 #### Os valores dos parâmetros
 
@@ -160,9 +160,9 @@ Isso tem o mesmo resultado, porém é mais claro e mais longo para escrever.
 
 Como nós dizemos mais cedo: não há uma regra absoluta no nível dos parâmetros e vocês encontrarão com certeza uns que funcionam diferentemente. Felizmente, as "convenções" que acabamos de dar são válidas na maioria dos casos.
 
-Certos parâmetros são um pouco diferentes e dependem dos comandos. Por exemplo o comando *ls*, se digitarmos o nome de uma pasta (ou subpasta). isto mostrará o conteúdo dessa pasta em vez do contéudo da pasta corrente.
+Certos parâmetros são um pouco diferentes e dependem dos comandos. Por exemplo o comando `ls`, se digitarmos o nome de uma pasta (ou subpasta). isto mostrará o conteúdo dessa pasta em vez do contéudo da pasta corrente.
 
-> josuegrace@josuegracestdy:~$ ls Examples
+> josuegrace@josuegracestudy:~$ ls Examples
 	
 	Experience ubuntu.ogg   logo-Ubuntu.png           oo-payment-schedule.ods
 	fables_01_01_aesop.spx  oo-about-these-files.odt  oo-presenting-kubuntu.odp
@@ -177,10 +177,10 @@ O Linux possui tantos comandos diferentes que é difícil de se perder e de esqu
 
 #### Autocomplete de comando
 
-A primeira coisa a saber é o autocomplete de comando. Tomamos por exemplo o comando *date*: você não lembra mais como se escreve porém, você lembra das primeiras letras do comando.
+A primeira coisa a saber é o autocomplete de comando. Tomamos por exemplo o comando `date`: você não lembra mais como se escreve porém, você lembra das primeiras letras do comando.
 
-Basta digitar "*da*" na console, e digitar duas vezes na tecla **Tab** na esquerda do seu teclado. E o resultado é o seguinte:
-> josuegrace@josuegracestdy:~$ da
+Basta digitar "`da`" na console, e digitar duas vezes na tecla **Tab** na esquerda do seu teclado. E o resultado é o seguinte:
+> josuegrace@josuegracestudy:~$ da
 	
 	dash date
 
@@ -190,31 +190,31 @@ Quando aperta duas vezes na tecla **Tab**, você está pedindo ao computador a l
 
 O mais interessante ainda é quando só há um resultado na sua busca, o computador preencherá com as letras que faltam e você só terá de apertar no *Enter*!.
 
-As vezes há muitos comandos que correspondem à sua pesquisa. Por exemplo se você não digitar nada e só apertar duas vezes *Tab*. Vai pedir de monstar a lista de todos os comandos disponíveis no seu computador.
+Às vezes há muitos comandos que correspondem à sua pesquisa. Por exemplo, se você não digitar nada e só apertar duas vezes *Tab*. Vai pedir para monstar a lista de todos os comandos disponíveis no seu computador.
 > josuegrace@josuegracestdy:~$
 	
 	Display all 2173 possibilities? (y or n)
 
 Muito brutal, não é ?
-Há 2 173 comandos disponíveis no meu computador. Mais eu vou instalar programas, mais terei comandos disponíveis. Não esperem então conhecer todos eles, novos programas saem todo dia.
+Há 2 173 comandos disponíveis no meu computador. Mais eu instalar programas, mais terei comandos disponíveis. Não esperem então conhecer todos eles, novos programas saem todo dia.
 
 Nesta pergunta, você pode responder "**y**" (yes) e a lista vai aparecer página por página. Alguns atalhos a saber quando uma lista aprece página por página:
 
 * aperte *Espaço* para ir na página seguinte;
 * aperte *Entrar* para ir na linha seguinte;
-* aperte *q* sair da lista.
+* aperte *q* para sair da lista.
 
 Se você responder "**n**" (no), nada vai acontecer.
 
 #### Histórico dos comandos
 
-Muitas vezes necessitamos achar um comando que já digitamos há alguns minutos (ou mesmo segundos) atrás. As vezes, é porque nós esquecemos o comando ou pode ser porque não queremos reescrever o comando inteiro de novo.
+Muitas vezes necessitamos achar um comando que já digitamos há alguns minutos (ou mesmo segundos) atrás. Às vezes, é porque nós esquecemos o comando ou pode ser porque não queremos reescrever o comando inteiro de novo.
 
 Esse atalho vale ouro: aperte a tecla com a flecha em direção para cima; você verá reaparecer o último comando que entrou. Se você digitar de novo a mesma tecla, aparecerá o penúltimo comando que entrou, e depois o que entrou antes do penúltimo, assim por diante.
 
 Se você apertar a tecla com flecha em direção para baixo, vão aprecer os comandos mais recentes.
 
-Se quiser voltar mais longe no histórico dos comandos, nem precisa apertar cem vezes na tecla "para cima". Existe o comando **history** que mostsra o histórico dos comandos.
+Se quiser voltar mais longe no histórico dos comandos, nem precisa apertar cem vezes na tecla "para cima". Existe o comando **`history`** que mostsra o histórico dos comandos.
 >	
 	152  date
 	153  ls
@@ -222,32 +222,32 @@ Se quiser voltar mais longe no histórico dos comandos, nem precisa apertar cem 
 	155  ls --all
 	156  history
 
-O último comando sempre vai ser *history*. Você vai notar que os comandos são numerotados; assim, você pode saber que *date* é o 152o comando que entrei no terminal.
+O último comando sempre vai ser *history*. Você vai notar que os comandos são numerotados; assim, você pode saber que `date` é o 152o comando que entrei no terminal.
 
 **Ctrl + R**: busca um comando com algumas letras.
 
-No caso em que a tecla "para cima" e a comando *history* não bastam para achar uma velho comando que eu digitei, há um atalho muito útil:
-*ctrl +R*. Aperte então nas teclas *Ctrl* e *R* ao mesmo tempo e o computador se colocará em modo "busca de um comado digitado". Você então digitar qualquer série de letras a um velho comando. Por exemplo, digite "*Ctrl + R*" e depois digite "*all*". O Linux vai achar o comando "*ls --all*" que contém jsutamente a palavra "*all*". Agora é só digitar *Enter* para entar novamente o comando.
-> (reverse-i-search)`all': ls --all
+No caso em que a tecla "para cima" e o comando `history` não bastam para achar uma velho comando que eu já digitei; há um atalho muito útil:
+*ctrl +R*. Aperte então nas teclas *Ctrl* e *R* ao mesmo tempo e o computador se colocará em modo "busca de um comado digitado". Você então pode digitar qualquer série de letras de um velho comando. Por exemplo, digite "*Ctrl + R*" e depois digite "*all*". O Linux vai achar o comando "`ls --all`" que contém jsutamente a palavra "*all*". Agora é só digitar *Enter* para entar novamente o comando.
+> (reverse-i-search)'all': ls --all
 
 Se não é o comando que está procurando, aperte novamente "*Ctrl + R*" para subir na lista de comandos que contêm "*all*".
 
 ## Alguns atalhos práticos do teclado.
 
-Não pode parecer porém, a console do Linux proprõe uma quantidade incrível de atalhos de teclado. Isto ajuda a ir muito rápido no que estamos fazendo.
+Não pode parecer porém, o console do Linux proprõe uma quantidade incrível de atalhos de teclado. Isto ajuda a ir muito rápido no que estamos fazendo.
 
 Aqui está uma lista de alguns deles que você deve saber.
 
-* **Ctrl + L**: Apaga o conteúdo da console. Muito útil para limpar a console quando ela está cheia. Existe também o comando *clear* que faz exatamente a mesma coisa.
+* **Ctrl + L**: Apaga o conteúdo do console. Muito útil para limpar o console quando ele está cheio. Existe também o comando *clear* que faz exatamente a mesma coisa.
 
-* **Ctrl + D**: envia a mesnagem de *EOF* (fim de arquivo) para console. Si você apertar este atalho numa linha de comando vazia, isto fechará a console em uso. Existe também o comando *exit* que tem o mesmo efeito.
+* **Ctrl + D**: envia a mesnagem de *EOF* (fim de arquivo) para o console. Se você apertar este atalho numa linha de comando vazia, isto fechará a console em uso. Existe também o comando `exit` que tem o mesmo efeito.
 
-* **Shift + PgUp**: permite para subir nas mensagens enviadas para a console. Em modo gráfico, consegue fazer isso também com o mouse.
+* **Shift + PgUp**: permite para subir nas mensagens enviadas para o console. Em modo gráfico, é possível também fazer isso com o mouse.
 * **Shift + PgDown**: A mesma coisa porém, para descer.
 
-Os atalhos a seguit são úteis quando você está digitando um longo comando.
+Os atalhos a seguir são úteis quando você está digitando um longo comando.
 
-* **Ctrl + A**: coloca o cursor o começo do comando. A tecla *home* tem o mesmo efeito.
+* **Ctrl + A**: coloca o cursor no começo do comando. A tecla *home* tem o mesmo efeito.
 * **Ctrl + E**: coloca o cursor no final do comando. A tecla *end* tem o mesmo efeito.
 * **Ctrl + U**: Apaga tudo que está a esquerda do cursor. Se o cursor estiver no final do comando, este será então apagado.
 * **Ctrl + K**: Apaga tudo que está a direita do cursor. Se o cursor estiver no começo do comando, este será então apagado.
@@ -256,4 +256,4 @@ Os atalhos a seguit são úteis quando você está digitando um longo comando.
 
 Esta lista vai parar aqui. Já são bastante coisas para decorar. Outros atalhos vamos descobrir ao longo do curso.
 
-Aconselhamos que se treinem para os decorar. Isto vos tornará mais eficazes!
+Aconselhamos que treine para os decorar. Isto tornará você mais eficaze!

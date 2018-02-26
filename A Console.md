@@ -1,4 +1,4 @@
-# Itrodução ao Shell do Linux
+# Introdução ao Shell do Linux
 
 ## Abrir o terminal
 

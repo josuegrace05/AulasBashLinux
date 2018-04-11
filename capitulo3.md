@@ -73,6 +73,8 @@ Se a letra aparecer isto quer dizer que a permissão existe. Porém, se tiver um
 > Porque que às vezes tem `r`, `w`, e `x`repetidos ?
 
 As permissões são divididas em grupo de utilizadores como segue:
+
+
 ![users](https://github.com/josuegrace05/AulasBashLinux/blob/master/users_permisions.jpeg)
 * O primeiro conjunto de permissão `rwx`indica as permissões que possui o **dono** do arquivo;
 * O segundo conjunto `rwx`inidica as permissões que possuem os outros membros do **grupo** sobre o  arquivo;

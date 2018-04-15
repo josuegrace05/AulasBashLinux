@@ -1,43 +1,43 @@
 # Usuários e Permissões
  
-No Linux é possível realizar o gerenciamento de usuários, grupos e permissões de acesso via prompt de comando, veremos alguns dos principais comandos a seguir:
+No Linux é possível realizar o gerenciamento de usuários, grupos e permissões de acesso via prompt de comando, veremos alguns dos principais comandos a seguir:  
  
-Os dois comandos mais básicos são o "**adduser**" e o "**passwd**", que permitem, respectivamente adicionar novos usuários e alterar as senhas de acesso posteriormente, como em:
+Os dois comandos mais básicos são o "**adduser**" e o "**passwd**", que permitem, respectivamente adicionar novos usuários e alterar as senhas de acesso posteriormente, como em:  
  
-**adduser _opções usuário_**
-Adiciona um usuário ao sistema, é possível definir alguns parâmetros a partir das opções se desejar;
+**adduser _opções usuário_**  
+Adiciona um usuário ao sistema, é possível definir alguns parâmetros a partir das opções se desejar;  
  
-**adduser -disabled-login _usuário_** faz com que a conta do usuário seja criada sem a solicitação de uma senha (ou seja, não executa o comando **passwd**). No entanto, a conta não poderá ser usada até que o usuário defina sua senha de acesso;
+**adduser -disabled-login _usuário_**: faz com que a conta do usuário seja criada sem a solicitação de uma senha (ou seja, não executa o comando **passwd**). No entanto, a conta não poderá ser usada até que o usuário defina sua senha de acesso;  
  
-**adduser -group _grupo_**: com esse parâmetro, ao invés de uma conta de usuário, um grupo é criado. Para essa tarefa também pode-se utilizar o comando **addgroup**;
+**adduser -group _grupo_**: com esse parâmetro, ao invés de uma conta de usuário, um grupo é criado. Para essa tarefa também pode-se utilizar o comando **addgroup**;  
  
-**userdel voldmort**
-Comando utilizado para apagar um usuário do sistema.
+**userdel voldemort**  
+Comando utilizado para apagar um usuário do sistema.  
  
-**userdel -r voldemort**
-A opção **-r** do comando indica que além do usuário ser removido do sistema a sua pasta home também será deletada.
+**userdel -r voldemort**  
+A opção **-r** do comando indica que além do usuário ser removido do sistema a sua pasta home também será deletada.  
  
-**passwd opções joao**
-Caso um usuário queria alterar a sua própria senha, basta digitar apenas **passwd** em um terminal. O usuário root (ou outro que tenha privilégios de administrador) pode mudar não só a sua própria senha como a senha de todos os outros usuários do sistema. Para isso, o comando **passwd** também é usado e pode ser acrescido de opções.
+**passwd opções joao**  
+Caso um usuário queria alterar a sua própria senha, basta digitar apenas **passwd** em um terminal. O usuário root (ou outro que tenha privilégios de administrador) pode mudar não só a sua própria senha como a senha de todos os outros usuários do sistema. Para isso, o comando **passwd** também é usado e pode ser acrescido de opções.  
  
-Para alterar o shell do usuário você usa o parâmetro "-s", como em:
-**usermod -s /usr/bin/rssh manuel**
+Para alterar o shell do usuário você usa o parâmetro "-s", como em:   
+**usermod -s /usr/bin/rssh manuel**  
  
-Para alterar o home, você usa o parâmetro "-d", como em:
-**usermod -d /var/www/manuel manuel**
+Para alterar o home, você usa o parâmetro "-d", como em:  
+**usermod -d /var/www/manuel manuel**  
  
-Você pode também especificar estes parâmetros diretamente ao criar o usuário, como em:
-**adduser --home /var/www/manuel --shell /usr/bin/rssh manuel**
+Você pode também especificar estes parâmetros diretamente ao criar o usuário, como em:  
+**adduser --home /var/www/manuel --shell /usr/bin/rssh manuel**  
  
-Uma forma simples fazer isso é criar um grupo, adicionar os três usuários ao grupo e ajustar as permissões da pasta de forma que o grupo tenha permissão de escrita. Para adicionar o grupo, usamos o comando "**groupadd**", como em:
-**groupadd intranet**
+Uma forma simples fazer isso é criar um grupo, adicionar os três usuários ao grupo e ajustar as permissões da pasta de forma que o grupo tenha permissão de escrita. Para adicionar o grupo, usamos o comando "**groupadd**", como em:  
+**groupadd intranet**  
+  
+Para adicionar os usuários desejados ao grupo, usamos o próprio comando "**adduser**", seguido pelo login e o grupo ao qual ele deve ser adicionado (um de cada vez), como em:  
+**adduser maria intranet**  
  
-Para adicionar os usuários desejados ao grupo, usamos o próprio comando "**adduser**", seguido pelo login e o grupo ao qual ele deve ser adicionado (um de cada vez), como em:
-**adduser maria intranet**
- 
-**Fontes:**
-        https://www.hardware.com.br/tutoriais/usuarios-grupos-permissoes/
-        https://www.infowester.com/usuarioslinux.php
+**Fontes:**  
+        https://www.hardware.com.br/tutoriais/usuarios-grupos-permissoes/  
+        https://www.infowester.com/usuarioslinux.php  
 
 # chmod: modificar as permissões de acesso
 
